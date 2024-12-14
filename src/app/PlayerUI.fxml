@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.PlayerUIController">
+   <children>
+      <ImageView fitHeight="436.0" fitWidth="625.0" layoutX="-14.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ff3.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="237.0" layoutY="81.0" text="Player Name" textFill="#ff8000">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="playerName" layoutX="237.0" layoutY="111.0" opacity="0.7" />
+      <TextArea fx:id="playerInfo" editable="false" layoutX="237.0" layoutY="149.0" opacity="0.8" prefHeight="185.0" prefWidth="335.0" />
+      <Button layoutX="410.0" layoutY="111.0" mnemonicParsing="false" onAction="#playerButtonAction" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: #ff9400;" text="Show   " />
+      <Button layoutX="397.0" layoutY="349.0" mnemonicParsing="false" onAction="#ResetAction" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: #ff9400;" text="  Reset" />
+      <Button layoutX="476.0" layoutY="350.0" mnemonicParsing="false" onAction="#backAction" style="-fx-background-color: #ff9400;" text="  Previous Page" />
+      <Label fx:id="clubName" alignment="CENTER" layoutX="88.0" layoutY="25.0" prefHeight="27.0" prefWidth="425.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView glyphName="REFRESH" layoutX="400.0" layoutY="366.0" />
+      <FontAwesomeIconView glyphName="PLAY" layoutX="478.0" layoutY="366.0" rotate="180.0" />
+      <ImageView fx:id="image" fitHeight="106.0" fitWidth="84.0" layoutX="488.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true" />
+      <ListView fx:id="listView" layoutX="33.0" layoutY="111.0" opacity="0.8" prefHeight="223.0" prefWidth="193.0" />
+      <Label layoutX="33.0" layoutY="81.0" text="Players" textFill="#ff8307">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="#ff8307" glyphName="USERS" layoutX="94.0" layoutY="96.0" />
+      <FontAwesomeIconView fill="#ff8307" glyphName="USER" layoutX="329.0" layoutY="96.0" />
+      <FontAwesomeIconView glyphName="CHEVRON_DOWN" layoutX="453.0" layoutY="128.0" />
+   </children>
+</AnchorPane>

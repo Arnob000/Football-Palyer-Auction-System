@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="328.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.clientController">
+   <children>
+      <ImageView fitHeight="394.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ff14.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="131.0" layoutY="106.0" text="Club Name" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="131.0" layoutY="154.0" text="Password" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="312.0" layoutY="236.0" mnemonicParsing="false" onAction="#loginButton" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #e14e4e;" text="   Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.5" />
+         </font></Button>
+      <PasswordField fx:id="passdwordField" layoutX="226.0" layoutY="150.0" opacity="0.85" />
+      <TextField fx:id="clubField" layoutX="226.0" layoutY="102.0" opacity="0.85" />
+      <Button layoutX="244.0" layoutY="236.0" mnemonicParsing="false" onAction="#resetButton" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #e14e4e;" text="   Reset" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.5" />
+         </font></Button>
+      <Label fx:id="errorMsg" layoutX="131.0" layoutY="202.0" prefHeight="20.0" prefWidth="246.0" textFill="RED">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="#f23737" glyphName="CLOSE" layoutX="558.0" layoutY="25.0" onMouseClicked="#Exit" size="20" />
+      <FontAwesomeIconView fill="WHITE" glyphName="LOCK" layoutX="109.0" layoutY="171.0" size="20" />
+      <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" layoutX="250.0" layoutY="255.0" />
+      <FontAwesomeIconView fill="WHITE" glyphName="SIGN_IN" layoutX="318.0" layoutY="255.0" />
+      <FontAwesomeIconView fill="#ff5555" glyphName="USERS" layoutX="284.0" layoutY="60.0" size="30" />
+      <MaterialDesignIconView fill="WHITE" glyphName="HOME" layoutX="105.0" layoutY="124.0" size="20" />
+   </children>
+</AnchorPane>

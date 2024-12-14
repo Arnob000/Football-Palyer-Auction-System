@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.CountryUIController">
+   <children>
+      <ImageView fitHeight="468.0" fitWidth="738.0" layoutX="-81.0" layoutY="-34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ff11.PNG" />
+         </image>
+      </ImageView>
+      <Button layoutX="481.0" layoutY="59.0" mnemonicParsing="false" onAction="#PressAction" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: #5d7093;" text="Press   " textFill="WHITE" />
+      <Button layoutX="372.0" layoutY="353.0" mnemonicParsing="false" onAction="#ResetAction" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: #5d7093;" text="  Reset" textFill="WHITE" />
+      <Button layoutX="440.0" layoutY="353.0" mnemonicParsing="false" onAction="#backAction" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #5d7093;" text="  Previous Page" textFill="WHITE" />
+      <TextField fx:id="textCountry" layoutX="182.0" layoutY="59.0" opacity="0.9" />
+      <TextArea fx:id="textArea" editable="false" layoutX="56.0" layoutY="92.0" opacity="0.9" prefHeight="245.0" prefWidth="481.0">
+         <font>
+            <Font size="12.2" />
+         </font></TextArea>
+      <Label layoutX="56.0" layoutY="61.0" text="Country Name" textFill="#92e0ff">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="clubName" alignment="CENTER" layoutX="56.0" layoutY="14.0" prefHeight="27.0" prefWidth="481.0" textAlignment="CENTER" textFill="#d7fcff">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="WHITE" glyphName="PLAY" layoutX="444.0" layoutY="369.0" rotate="180.0" />
+      <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" layoutX="376.0" layoutY="370.0" />
+      <FontAwesomeIconView fill="WHITE" glyphName="PLAY" layoutX="523.0" layoutY="77.0" />
+   </children>
+</AnchorPane>
